@@ -1,0 +1,10 @@
+<button onclick="sendRequestAndClose()">Wyślij żądanie i zamknij kartę</button>
+
+<script>
+function sendRequestAndClose() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://trigger.macrodroid.com/fd180c85-28b8-497c-b2f0-3a6aed7416c9/czadalezabawa');
+  xhr.send();
+  setTimeout(function(){ window.close(); }, 1000);
+}
+</script>
