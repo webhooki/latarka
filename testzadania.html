@@ -1,5 +1,3 @@
-<button onclick="sendRequestAndClose()">Wyślij żądanie i zamknij kartę</button>
-
 <script>
 function sendRequestAndClose() {
   var xhr = new XMLHttpRequest();
@@ -7,4 +5,5 @@ function sendRequestAndClose() {
   xhr.send();
   setTimeout(function(){ window.close(); }, 1000);
 }
-</script>
+
+// wywołanie funkcji sendRequestAndClose() po załadowaniu strony
